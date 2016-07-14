@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/pic"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/namE"
+        android:id="@+id/name"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/pic"
+        android:layout_alignLeft="@+id/phoneNumber"
+        android:layout_alignStart="@+id/phoneNumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/the_name"
+        android:width="200sp"
+        android:layout_alignTop="@+id/name"
+        android:layout_alignLeft="@+id/edit_contact"
+        android:layout_alignStart="@+id/edit_contact" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/numbeR"
+        android:id="@+id/phoneNumber"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="15sp"
+        android:layout_toLeftOf="@+id/pic"
+        android:layout_toStartOf="@+id/pic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/the_num"
+        android:width="200sp"
+        android:layout_alignTop="@+id/phoneNumber"
+        android:layout_alignLeft="@+id/the_name"
+        android:layout_alignStart="@+id/the_name" />
+
+    <Button
+        style="?android:attr/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EDIT"
+        android:id="@+id/edit_contact"
+        android:layout_marginTop="71dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/the_num"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>

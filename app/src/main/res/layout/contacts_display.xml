@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/picture"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/contactname"
+        android:hint="@string/name"
+        android:layout_alignTop="@+id/picture"
+        android:layout_alignRight="@+id/contactnumber"
+        android:layout_alignEnd="@+id/contactnumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/contactnumber"
+        android:hint="@string/number"
+        android:layout_above="@+id/edit"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_contact"
+        android:id="@+id/edit"
+        android:focusable="false"
+        android:layout_alignBottom="@+id/picture"
+        android:layout_toRightOf="@+id/contactnumber"
+        android:layout_toEndOf="@+id/contactnumber" />
+
+
+</RelativeLayout>
